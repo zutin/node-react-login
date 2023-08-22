@@ -10,7 +10,7 @@ export function Login() {
     const handleLogin = async (e) => {
         e.preventDefault()
 
-        console.log(username, password)
+        setUser(null)
 
         try{
             const response = await axios.post('http://localhost:3000/login', 
@@ -34,6 +34,8 @@ export function Login() {
         e.preventDefault()
 
         setUser(null)
+        setPassword('')
+        setUsername('')
         setError('')
     }
 

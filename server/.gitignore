@@ -1,0 +1,23 @@
+# Dependency directories
+node_modules/
+
+# Logs
+logs/
+*.log
+*.log.*
+*.pid
+*.pid.lock
+
+# Environment file
+.env
+
+# Editor specific files
+.vscode/
+.idea/
+
+# Other
+.DS_Store
+*.tmp
+*.swp
+Thumbs.db
+
