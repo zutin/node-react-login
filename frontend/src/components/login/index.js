@@ -66,7 +66,7 @@ export function Login() {
                 <div className='text-center my-auto'>
                     <span className="text-slate-100 text-3xl">Acessou como <b>{user.name}</b>.</span>
                     <br/>
-                    <span className='text-slate-100 text-3xl'>Seu ID é <b>{user.id}</b>.</span>
+                    <span className='text-slate-100 text-3xl'>Seu ID é <b>{user._id}</b>.</span>
                 </div>
                 <button type="button" className="bg-blue-500 transition rounded-xl p-3 w-1/5 mb-4 mx-auto text-slate-100 hover:bg-blue-400 active:bg-blue-600" onClick={(e) => handleLogout(e)}>Voltar</button>
             </div>

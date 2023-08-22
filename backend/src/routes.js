@@ -1,22 +1,22 @@
 const express = require('express');
+const User = require('./models/User');
 
 const routes = express.Router();
-const users = [{
-    id: 1,
-    name: 'John Doe',
-    username: '123',
-    password: '123'
-}];
 
-routes.post('/login', (req, res) => {
+routes.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
-    const user = users.find(user => user.username === username && user.password === password);
-    if(user) {
-        return res.status(200).json(user);
-    }
+    try {
+        const user = await User.findOne({ username, password});
 
-    return res.status(401).json({ message: 'Invalid credentials'});
+        if(user) {
+            return res.status(200).json(user);
+        } else {
+            return res.status(401).json({ message: 'Invalid credentials'});
+        }
+    } catch (error) {
+        return res.status(500).json({ message: 'Internal server error'});
+    }
 });
 
 module.exports = routes;

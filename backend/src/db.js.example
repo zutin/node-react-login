@@ -1,0 +1,10 @@
+const mongoose = require('mongoose');
+
+mongoose.connect('server.url', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log('MongoDB Connected - All safe!'))
+.catch(err => console.log(err));
+
+module.exports = mongoose;
