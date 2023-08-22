@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Página de Login com React e Node.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse é um projeto de aprendizado utilizando os frameworks React e Node.js e utilizando MongoDB para o banco de dados. Ele está organizado com uma arquitetura cliente-servidor.
 
-## Available Scripts
+## Estrutura do Projeto
 
-In the project directory, you can run:
+O projeto está organizado da seguinte forma:
 
-### `npm start`
+- `client`: Este é o diretório para o front-end do projeto em React.
+- `server`: Este é o diretório para o back-end do projeto em Node.js.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Como Instalar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Abra a pasta do projeto no terminal e execute os seguintes comandos para instalar as dependências do projeto:
 
-### `npm test`
+- `cd client && npm install`: Instala as dependências do front-end (React) do projeto.
+- `cd server && npm install`:  Instala as dependências do back-end (Node.js) do projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Scripts Disponíveis
 
-### `npm run build`
+No diretório do projeto, você pode executar os seguintes scripts:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `cd client && npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Executa o servidor do React no modo de desenvolvimento.\
+Abra [http://localhost:3001](http://localhost:3001) para visualizar o front-end no seu navegador.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `cd server && npm run dev`
 
-### `npm run eject`
+Inicia o servidor Node.js em modo de desenvolvimento.\
+O back-end roda em [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `cd client && npm run build`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Constrói o app React para produção e o coloca na pasta `client/build`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Servidor
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O back-end é alimentado pelo Node.js e Express, utilizando MongoDB como banco de dados. O servidor está configurado para rodar em [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Cliente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+O front-end é uma aplicação React utilizando Axios. A aplicação está configurada para rodar em [http://localhost:3001](http://localhost:3001).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Aprenda Mais
 
-### Code Splitting
+Você pode aprender mais sobre o React na [Documentação do React](https://pt-br.reactjs.org/docs/getting-started.html).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para aprender mais sobre o Node.js, consulte a [Documentação do Node.js](https://nodejs.org/pt-br/docs/).
 
-### Analyzing the Bundle Size
+## Documentação Adicional
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Para mais informações sobre tópicos específicos, confira os seguintes links:
 
-### Making a Progressive Web App
+- [Documentação do React](https://pt-br.reactjs.org/docs/getting-started.html)
+- [Documentação do Node.js](https://nodejs.org/pt-br/docs/)
+- [Documentação do Express](https://expressjs.com/pt-br/starter/installing.html)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
